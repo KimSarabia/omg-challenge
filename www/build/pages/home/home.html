@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar primary>
+    <ion-title>
+      Levels
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="home" padding>
+  <ion-list>
+    <ion-item  no-lines #slidingItem *ngFor="let level of levels; let index = index">
+      <div>
+        {{level.levelNum}} {{level.levelName}}
+      </div>
+      <div>
+        <button outline round (click)="navToDetail(level, index);">Detail</button>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
