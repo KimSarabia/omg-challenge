@@ -13,13 +13,15 @@
       <ion-col width-80>
         <ion-list>
           <ion-item  no-lines *ngFor="let level of levels; let index = index">
-            <!-- <ion-col> -->
+            <ion-row>
+            <ion-col>
             <div>
               <input class="test" type="image" src="img/game-btn.png" (click)="navToDetail(level, index);"/>
             </div>
                 <div>{{level.levelName}}</div>
                 <!-- <button outline round (click)="navToDetail(level, index);">Detail</button> -->
-            <!-- </ion-col> -->
+            </ion-col>
+            </ion-row>
           </ion-item>
         </ion-list>
       </ion-col>
