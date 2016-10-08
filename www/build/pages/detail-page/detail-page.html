@@ -1,14 +1,8 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Detail Page</ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
-  <h2>Level</h2>
-  <ion-textarea #updatedLevel value="{{level.levelNum}}"></ion-textarea>
-  <h2>Title</h2>
-  <ion-textarea #updatedTitle value="{{level.levelName}}"></ion-textarea>
+  <h2>{{level.levelNum}}</h2>
+  <!-- <ion-textarea #updatedLevel value="{{level.levelNum}}"></ion-textarea> -->
+  <h2>{{level.levelName}}</h2>
+  <!-- <ion-textarea #updatedTitle value="{{level.levelName}}"></ion-textarea> -->
   <ion-row>
     <ion-col width-100>
       <button light block (click)="navToHome(level, index);">

@@ -9479,8 +9479,6 @@ body {
   background-color: #fff; }
 
 .home-page { }
-  .home-page body {
-    background-color: blue; }
   .home-page ion-item {
     display: inline-block;
     width: 50% !important; }

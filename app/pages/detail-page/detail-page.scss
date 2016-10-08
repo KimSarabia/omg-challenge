@@ -1,3 +1,25 @@
 .detail-page {
 
+  body {
+  }
+
+  .pane {
+    background-color: #000;
+}
+
+  ion-item {
+    display: inline-block;
+    width: 50% !important;
+  }
+
+  .test {
+    height: 90px;
+  }
+
+  .item {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Gloria Hallelujah', cursive;
+
+  }
 }
