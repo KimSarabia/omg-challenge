@@ -1,20 +1,29 @@
-<ion-header>
-  <ion-navbar primary>
+<!-- <ion-header>
+  <ion-navbar>
     <ion-title>
       Levels
     </ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content class="home" padding>
-  <ion-list>
-    <ion-item  no-lines #slidingItem *ngFor="let level of levels; let index = index">
-      <div>
-        {{level.levelNum}} {{level.levelName}}
-      </div>
-      <div>
-        <button outline round (click)="navToDetail(level, index);">Detail</button>
-      </div>
-    </ion-item>
-  </ion-list>
+<ion-content class="home home-background" padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-10></ion-col>
+      <ion-col width-80>
+        <ion-list>
+          <ion-item  no-lines *ngFor="let level of levels; let index = index">
+            <!-- <ion-col> -->
+            <div>
+              <input class="test" type="image" src="img/game-btn.png" (click)="navToDetail(level, index);"/>
+            </div>
+                <div>{{level.levelName}}</div>
+                <!-- <button outline round (click)="navToDetail(level, index);">Detail</button> -->
+            <!-- </ion-col> -->
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col width-10></ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
