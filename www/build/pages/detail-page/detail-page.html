@@ -1,8 +1,25 @@
-<ion-content padding>
+<ion-content class="detail-page" text-center balanced padding>
+  <ion-grid balanced>
+    <ion-row balanced>
+      <ion-col balanced width-10></ion-col>
+      <ion-col width-80>
+        <h2>{{level.levelName}}</h2>
+        <ion-row>
+          <ion-col width-100>
+            <button light block (click)="navToHome(level, index);">
+              Back
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col width-10></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<!-- <ion-content padding>
   <h2>{{level.levelNum}}</h2>
-  <!-- <ion-textarea #updatedLevel value="{{level.levelNum}}"></ion-textarea> -->
   <h2>{{level.levelName}}</h2>
-  <!-- <ion-textarea #updatedTitle value="{{level.levelName}}"></ion-textarea> -->
   <ion-row>
     <ion-col width-100>
       <button light block (click)="navToHome(level, index);">
@@ -10,4 +27,4 @@
       </button>
     </ion-col>
   </ion-row>
-</ion-content>
+</ion-content> -->
