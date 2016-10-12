@@ -1,6 +1,6 @@
 # OMG APP
 
-[DEMO](https://git.heroku.com/hidden-sands-90489.git)
+[DEMO](https://hidden-sands-90489.herokuapp.com/)
 
 ## Installation
 Download or git clone
